@@ -1,0 +1,48 @@
+2017-09-10 12:29:04.557 [main] WARN  org.springframework.context.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-10 12:29:05.718 [localhost-startStop-1] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-10 12:29:08.088 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-10 12:37:09.039 [DiscoveryClient-CacheRefreshExecutor-0] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient - Request execution failure
+2017-09-10 12:37:09.039 [DiscoveryClient-HeartbeatExecutor-0] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient - Request execution failure
+2017-09-10 12:37:09.041 [DiscoveryClient-HeartbeatExecutor-0] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient - Request execution failure
+2017-09-10 12:37:09.041 [DiscoveryClient-CacheRefreshExecutor-0] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient - Request execution failure
+2017-09-10 12:37:09.829 [RMI TCP Connection(2)-127.0.0.1] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1505018229829, current=DOWN, previous=UP]
+2017-09-10 12:37:09.831 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient - Request execution failure
+2017-09-10 12:37:09.832 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL/192.168.1.113:zuul:7073 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:815)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:104)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:88)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-10 12:37:09.832 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:815)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:104)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:88)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-10 12:37:09.833 [RMI TCP Connection(2)-127.0.0.1] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient - Request execution failure
+2017-09-10 12:37:09.846 [RMI TCP Connection(2)-127.0.0.1] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-10 12:41:11.566 [main] WARN  org.springframework.context.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-10 12:41:12.745 [localhost-startStop-1] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-10 12:41:14.984 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
